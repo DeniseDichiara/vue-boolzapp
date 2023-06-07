@@ -1,0 +1,42 @@
+
+header{
+    background-color: #009688;
+    width: 100%;
+    height: 100px;
+}
+
+main{
+    background-color: #d8dbd5;
+    width: 100%;
+}
+
+.my_main-window{
+    margin: 0 auto;
+    background-color: azure;
+    width: 1500px;
+    height: 800px;
+}
+
+.my_contacts-window{
+    background-color: cornsilk;
+    width: 470px;
+    height: 100%;
+}
+
+.my_chat-window{
+    background-color: floralwhite;
+    width: calc(100% - 100px);
+    height: 100%;
+}
+
+.my_single-person{
+    background-color: lightblue;
+    width: 100%;
+    height: 80px;
+}
+
+.my_personal {
+    background-color: lightpink;
+    width: 100%;
+    height: 80px;
+}

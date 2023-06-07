@@ -30,10 +30,29 @@ main{
 }
 
 .my_single-person{
-    background-color: lightblue;
+    background-color: #eaeaea;
     width: 100%;
     height: 80px;
 }
+
+.my_notification{
+    background-color: #8edafc;
+    width: 100%;
+    height: 90px;
+}
+
+.my_bell{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/*.my_bell-icon{
+    align-items: center;
+}
+*/
 
 .my_personal {
     background-color: lightpink;

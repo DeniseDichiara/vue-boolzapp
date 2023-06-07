@@ -8,17 +8,18 @@ header{
 main{
     background-color: #d8dbd5;
     width: 100%;
+    height: 100%;
 }
 
 .my_main-window{
     margin: 0 auto;
-    background-color: azure;
+    /*background-color: azure;*/
     width: 1500px;
-    height: 800px;
+    height: 1100px; 
 }
 
 .my_contacts-window{
-    background-color: cornsilk;
+    background-color: white;
     width: 470px;
     height: 100%;
 }
@@ -39,6 +40,19 @@ main{
     background-color: #8edafc;
     width: 100%;
     height: 90px;
+}
+
+.michele{
+    background-color: khaki;
+    width: 100%;
+    height: 90px;
+}
+
+.claudia{
+    background-color: #ffffff;
+    width: 100%;
+    height: 90px;
+    border-top: 1px solid #d6d6d6;
 }
 
 .my_bell{
@@ -65,4 +79,8 @@ main{
     background-color: #ffffff;
     width: 95%;
     height: 70%;
+}
+
+.my_h{
+    font-size: small;
 }

@@ -26,10 +26,10 @@
 
             <main class="my_main">
 
-                <div class="my_main-window d-flex flex-row">
+                <div class="my_main-window d-flex flex-row pb-5">
 
                     <!--*Finestra contatti-->
-                    <div class="my_contacts-window">
+                    <div class="my_contacts-window mb-3">
 
                         <!--*LINE SOFIA-->
                         <div class="my_single-person d-flex flex-row justify-content-between px-3 ">
@@ -69,7 +69,65 @@
                             </div>
                         </div>
 
+                        <!--
+
+                            <div class="michele d-flex flex-row pt-3"> 
+                            <div class="ps-3">
+                                <div class="my_bell d-flex flex-row justify-content-center align-items-center">
+                                    <i class="fa-solid fa-bell-slash my_bell-icon " style="color: #8edafc;"></i>
+                                </div>
+                            </div>
+                            <div class="my_messaggi-notifche ps-3">
+                                <p class="mb-0">Michele</p>
+                                <p>Ultimo messaggio inviato</p>
+                            </div>
+                        </div>
+                        
+                        <div class="claudia d-flex flex-row pt-3"> 
+                            <div class="ps-3">
+                                <div class="my_bell d-flex flex-row justify-content-center align-items-center">
+                                    <i class="fa-solid fa-bell-slash my_bell-icon " style="color: #8edafc;"></i>
+                                </div>
+                            </div>
+                            <div class="my_messaggi-notifiche ps-3">
+                                <p class="mb-0">Fabio</p>
+                                <p>Ultimo messaggio inviato</p>
+                            </div>
+                        </div>
+
+
+
+                        -->
+                        
+
+                        
+
+                        <!--! v-for su contacts-->
+
+                        <div v-for="(contact, index) in contacts" class="claudia d-flex flex-row justify-content-between pt-3"> 
+                            <div class="d-flex flex-row" >
+                                <div class="ps-3">
+                                    <div class="my_bell d-flex flex-row justify-content-center align-items-center">
+                                        <i class="fa-solid fa-bell-slash my_bell-icon " style="color: #8edafc;"></i>
+                                    </div>
+                                </div>
+                                <div class="my_messaggi-notifiche ps-3">
+                                        <p class="mb-0">
+                                            {{contact.name}}
+                                        </p>
+                                        <p class="my_h">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                </div>
+                            </div>
+                           
+                            <p class=" my_h d-flex flex-row justify-content-end pe-2 fw-light">12:00</p>
+                        </div>
+
+
                     </div>
+
+
 
                     <!--?Finestra chat-->
                     <div class="my_chat-window">
@@ -86,7 +144,7 @@
 
                             <nav class="mt-3">
                                 <i class="fa-solid fa-circle-notch " style="color: #b1b1b1;"></i>
-                                <i class="fa-solid fa-paperclip" style="color: #b1b1b1;"></i>
+                                <i class="fa-solid fa-paperclip ps-2" style="color: #b1b1b1;"></i>
                                 <i class="fa-solid fa-ellipsis-vertical ps-2" style="color: #b1b1b1;"></i>
                             </nav>
                         </div>

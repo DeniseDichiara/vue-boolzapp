@@ -24,10 +24,37 @@ main{
     height: 100%;
 }
 
+.my_chat-dialog-window{
+    width: calc(100% - 100px);
+}
+
 .my_chat-window{
     background-image: url("mine.jpg");
-    width: calc(100% - 100px);
-    height: 100%;
+    width: 100%;
+    height: calc(100% - 100px) ;
+}
+
+.my_dialog-window{
+    background-color:#f3eeea;
+    width: 100%;
+    height: 100px;
+}
+
+/*.my_smile{
+    width: 50px;
+    height: 50px;
+    /*margin: 0 auto;
+}
+*/
+
+i{
+    width: 100%;
+}
+
+.my_input{
+    background-color: white;
+    width: 900px;
+    border-radius: 10px;
 }
 
 .my_single-person{
@@ -83,4 +110,8 @@ main{
 
 .my_h{
     font-size: small;
+}
+
+.my_bell-icon {
+    margin: 0 auto;
 }

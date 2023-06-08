@@ -95,6 +95,10 @@ i{
     border-top: 1px solid #d6d6d6;
 }
 
+.contact-active{
+    background-color: #e9ebeb;
+}
+
 .my_bell{
     background-color: white;
     width: 50px;

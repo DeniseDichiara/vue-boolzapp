@@ -53,8 +53,8 @@
                             </div>
 
                             <div class="my_messaggi-notifche ps-3">
-                                <p class="mb-0">messaggi</p>
-                                <p>notiche</p>
+                                <p class="mb-0 fw-semibold"> Ricevi notifiche di nuovi messaggi</p>
+                                <p class="fw-lighter"><ins>Attiva notiche desktop</ins></p>
                             </div>
                         </div>
 
@@ -68,63 +68,27 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!--
-
-                            <div class="michele d-flex flex-row pt-3"> 
-                            <div class="ps-3">
-                                <div class="my_bell d-flex flex-row justify-content-center align-items-center">
-                                    <i class="fa-solid fa-bell-slash my_bell-icon " style="color: #8edafc;"></i>
-                                </div>
-                            </div>
-                            <div class="my_messaggi-notifche ps-3">
-                                <p class="mb-0">Michele</p>
-                                <p>Ultimo messaggio inviato</p>
-                            </div>
-                        </div>
-                        
-                        <div class="claudia d-flex flex-row pt-3"> 
-                            <div class="ps-3">
-                                <div class="my_bell d-flex flex-row justify-content-center align-items-center">
-                                    <i class="fa-solid fa-bell-slash my_bell-icon " style="color: #8edafc;"></i>
-                                </div>
-                            </div>
-                            <div class="my_messaggi-notifiche ps-3">
-                                <p class="mb-0">Fabio</p>
-                                <p>Ultimo messaggio inviato</p>
-                            </div>
-                        </div>
-
-
-
-                        -->
-                        
-
                         
 
                         <!--! v-for su contacts-->
-
                         <div v-for="(contact, index) in contacts" class="claudia d-flex flex-row justify-content-between pt-3"> 
                             <div class="d-flex flex-row" >
                                 <div class="ps-3">
                                     <div class="my_bell d-flex flex-row justify-content-center align-items-center">
-                                        <i class="fa-solid fa-bell-slash my_bell-icon " style="color: #8edafc;"></i>
+                                        <img src="{{contact.avatar}}"> 
                                     </div>
                                 </div>
                                 <div class="my_messaggi-notifiche ps-3">
-                                        <p class="mb-0">
+                                        <p class="mb-0 fw-semibold">
                                             {{contact.name}}
                                         </p>
                                         <p class="my_h">
-                                            Ultimo messaggio inviato
+                                                Ultimo messaggio inviato
                                         </p>
                                 </div>
                             </div>
-                           
                             <p class=" my_h d-flex flex-row justify-content-end pe-2 fw-light">12:00</p>
                         </div>
-
-
                     </div>
 
 
@@ -139,8 +103,8 @@
                                         <img src="" alt="Michele's profile pic">
                                     </div>
                                     <div>
-                                        <p class="ps-2 mb-0">Michele</p>
-                                        <div class="ps-2">Accesso</div>
+                                        <p class="ps-2 mb-0 fw-semibold">Michele</p>
+                                        <p class=" ps-2 fw-lighter">Ultimo accesso oggi alle 12:00</p>
                                     </div>
                                 </div>
     
@@ -174,35 +138,21 @@
                                 </div>
                                 
                             </div>
-
-
-
                         </div>
     
                         <div class="my_dialog-window d-flex flex-row justify-content-between align-items-center px-5">
                             <div class="my_smile">
                                 <i class="fa-regular fa-face-smile" style="color: #6f7785;"></i>
                             </div>
-
-                            <div class="my_input py-3 ps-3">
-                                Scrivi un messaggio
-                            </div>
-
+                            <div class="my_input py-3 ps-3">Scrivi un messaggio</div>
                             <div>
                                 <i class="fa-solid fa-microphone" style="color: #8a8e93;"></i>
                             </div>
-
-    
                         </div>
-
+                        
                     </di>
-                    
-
-
                 </div>
-
             </main>
-
         </div>
 
         

@@ -85,15 +85,15 @@
 
             <!--* CONTATC LIST-->
             <!--! v-for su contacts-->
-            <div class="contact-list  pt-3">
-                <div class="d-flex flex-row justify-content-between">
+            <div class="contact-list">
+                <div v-for="cantact in contacts" class=" d-flex flex-row justify-content-between pb-2">
                     <article class="contact d-flex flex-row pt-3">
                         <div class="contact-avatar ps-3">
-                            <img src="avatar_1.jpg">
+                            <img :src="contact.avatar" alt="contact.name + 'avatar'">
                         </div>
                         <div class="my_messaggi-notifiche ps-3">
                             <p class="mb-0 fw-semibold">
-                                Michele
+                                {{contact.name}}
                             </p>
                             <p class="my_h">
                                 Ultimo messaggio inviato

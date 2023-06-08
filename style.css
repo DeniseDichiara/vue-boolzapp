@@ -22,12 +22,13 @@ img{
     border-radius: 50%;
 }
 
-.my_main-window{
+/*.my_main-window{
     margin: 0 auto;
     /*background-color: azure;*/
-    width: 1500px;
+    /*width: 1500px;
     height: 1100px; 
 }
+*/
 
 .my_contacts-window{
     background-color: white;
@@ -35,9 +36,9 @@ img{
     height: 100%;
 }
 
-.my_chat-dialog-window{
+/*.my_chat-dialog-window{
     width: calc(100% - 100px);
-}
+}*/
 
 .my_chat-window{
     background-image: url("mine.jpg");
@@ -87,10 +88,10 @@ i{
     height: 90px;
 }
 
-.claudia{
+.contact-list{
     background-color: #ffffff;
     width: 100%;
-    height: 90px;
+    height: calc(100% - 240px);
     border-top: 1px solid #d6d6d6;
 }
 
@@ -114,6 +115,8 @@ i{
     width: 100%;
     height: 70px;
 }
+
+/*! DEVE ESSERE UN INPUT */
 .my_search-ppl{
     background-color: #ffffff;
     width: 95%;

@@ -24,7 +24,8 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        
+
+
         <!--*Finestra contatti-->
         <div class="my_contacts-window mb-3">
 
@@ -60,6 +61,7 @@
                 </div>
             </div>
 
+            <!--*LINE SEARCH-->
             <div class="my_search d-flex flex-row justify-content-center align-items-center">
                 <div class="my_search-ppl d-flex flex-row pt-2 ps-3 ">
                     <div class="pt-1">
@@ -71,9 +73,37 @@
                 </div>
             </div>
 
-
+            <!--* CONTATC LIST-->
             <!--! v-for su contacts-->
-            <div v-for="(contact, index) in contacts" class="claudia d-flex flex-row justify-content-between pt-3">
+            <div class="contact-list  pt-3">
+
+                <!--
+                    d-flex flex-row justify-content-between pt-3
+
+
+                    v-for="(contact, index) in contacts"
+                -->
+
+                <!--
+
+                    <div class="d-flex flex-row">
+                    <div class="ps-3">
+                        <div class="my_bell d-flex flex-row justify-content-center align-items-center">
+                            <img src="{{contact.avatar}}">
+                        </div>
+                    </div>
+                    <div class="my_messaggi-notifiche ps-3">
+                        <p class="mb-0 fw-semibold">
+                            {{contact.name}}
+                        </p>
+                        <p class="my_h">
+                            Ultimo messaggio inviato
+                        </p>
+                    </div>
+                </div>
+                <p class=" my_h d-flex flex-row justify-content-end pe-2 fw-light">12:00</p>
+
+
                 <div class="d-flex flex-row">
                     <div class="ps-3">
                         <div class="my_bell d-flex flex-row justify-content-center align-items-center">
@@ -90,6 +120,12 @@
                     </div>
                 </div>
                 <p class=" my_h d-flex flex-row justify-content-end pe-2 fw-light">12:00</p>
+
+
+
+                -->
+
+                
             </div>
         </div>
 

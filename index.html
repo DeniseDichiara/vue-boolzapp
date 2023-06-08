@@ -51,7 +51,7 @@
             <div class="my_notification d-flex flex-row pt-3">
                 <div class="ps-3">
                     <div class="my_bell d-flex flex-row  align-items-center ps-3">
-                        <i class="fa-solid fa-bell-slash " style="color: #8edafc;"></i>
+                        <i class="fa-solid fa-bell-slash blue-bell" style="color: #8edafc;"></i>
                     </div>
                 </div>
 
@@ -62,8 +62,14 @@
             </div>
 
             <!--*LINE SEARCH-->
-            <div class="my_search d-flex flex-row justify-content-center align-items-center">
-                <div class="my_search-ppl d-flex flex-row pt-2 ps-3 ">
+            <div class="my_search d-flex flex-row  align-items-center">
+                <label for="message-search" class="bg-white"><i class="fa-solid fa-magnifying-glass px-4" style="color: #6b717b;"></i></label>
+                <input type="text" id="message-search" class="flex-grow-1 me-3">
+
+
+                <!--
+
+                    <div class="my_search-ppl d-flex flex-row pt-2 ps-3 ">
                     <div class="pt-1">
                         <i class="fa-solid fa-magnifying-glass" style="color: #6b717b;"></i>
                     </div>
@@ -71,11 +77,29 @@
                         <p class="pb-2">Cerca o inizia una nuova chat</p>
                     </div>
                 </div>
+
+                -->
+
+                
             </div>
 
             <!--* CONTATC LIST-->
             <!--! v-for su contacts-->
             <div class="contact-list  pt-3">
+                <article class="contact d-flex flex-row pt-3">
+                    <div class="contact-avatar ps-3">
+                        <img src="avatar_1.jpg">
+                    </div>
+                    <div class="my_messaggi-notifiche ps-3">
+                        <p class="mb-0 fw-semibold">
+                            Michele
+                        </p>
+                        <p class="my_h">
+                            Ultimo messaggio inviato
+                        </p>
+                    </div>
+
+                </article>
 
                 <!--
                     d-flex flex-row justify-content-between pt-3

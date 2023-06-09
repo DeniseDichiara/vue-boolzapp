@@ -168,6 +168,8 @@ createApp({
                 }
             ],
             activeContactIndex: 0,
+
+            newElement : {message: ''},
             
 
         }
@@ -175,7 +177,14 @@ createApp({
     methods: {
         selectConctact(index){
             this.activeContactIndex = index;
-        }
-        
+        },
+
+        addNewTodoElement(todoElement){
+            if (this.newElement.message !== ''){
+                this.Messages.push(todoElement);
+                this.newElement = {message: ''};
+            }
+        },
+
     },
 }).mount('#app')

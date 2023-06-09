@@ -169,7 +169,7 @@ createApp({
             ],
             activeContactIndex: 0,
 
-            newElement : {message: ''},
+            
             
 
         }
@@ -179,10 +179,11 @@ createApp({
             this.activeContactIndex = index;
         },
 
-        addNewTodoElement(todoElement){
+        addNewTodoElement(newmsn){
+            console.log(this.contacts[this.activeContactIndex].messages)
             if (this.newElement.message !== ''){
-                this.contacts.push(todoElement);
-                this.newElement = {message: ''};
+                this.contacts[this.activeContactIndex].messages.push({date:'28/03/2020 10:20:10',  message: newmsn, status: 'received'});
+                this.newElement = '';
             }
         },
 

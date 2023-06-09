@@ -70,7 +70,7 @@
             <!--* CONTATC LIST-->
             <!--! v-for su contacts-->
             <div class="contact-list">
-                <div  v-for="(contact, index) in contacts" class=" d-flex flex-row justify-content-between pb-2 my_border">
+                <div class=" d-flex flex-row justify-content-between pb-2 my_border"  v-for="(contact, index) in contacts" @click="selectConctact(index)" >
                     <article class="contact d-flex flex-row pt-2">
                         <div class="contact-avatar ps-3">
                             <img :src="contact.avatar" :alt="contact.name +'\'s avatar'">
@@ -86,58 +86,6 @@
                     </article>
                     <p class=" my_h d-flex flex-row justify-content-end pe-2 fw-light">12:00</p>
                 </div>
-                
-
-
-                <!--
-                    d-flex flex-row justify-content-between pt-3
-
-
-                    v-for="(contact, index) in contacts"
-                -->
-
-                <!--
-
-                    <div class="d-flex flex-row">
-                    <div class="ps-3">
-                        <div class="my_bell d-flex flex-row justify-content-center align-items-center">
-                            <img src="{{contact.avatar}}">
-                        </div>
-                    </div>
-                    <div class="my_messaggi-notifiche ps-3">
-                        <p class="mb-0 fw-semibold">
-                            {{contact.name}}
-                        </p>
-                        <p class="my_h">
-                            Ultimo messaggio inviato
-                        </p>
-                    </div>
-                </div>
-                <p class=" my_h d-flex flex-row justify-content-end pe-2 fw-light">12:00</p>
-
-
-                <div class="d-flex flex-row">
-                    <div class="ps-3">
-                        <div class="my_bell d-flex flex-row justify-content-center align-items-center">
-                            <img src="{{contact.avatar}}">
-                        </div>
-                    </div>
-                    <div class="my_messaggi-notifiche ps-3">
-                        <p class="mb-0 fw-semibold">
-                            {{contact.name}}
-                        </p>
-                        <p class="my_h">
-                            Ultimo messaggio inviato
-                        </p>
-                    </div>
-                </div>
-                <p class=" my_h d-flex flex-row justify-content-end pe-2 fw-light">12:00</p>
-
-
-
-                -->
-
-                
             </div>
         </div>
 
@@ -171,15 +119,10 @@
                 <!--! MESSAGES-->
 
                 <div class="messages clearfix">
-                    <div class="message message-sent">
-                        Hai portato fuori il gatto?
+                    <div v-for="messageObj in contacts[activeContactIndex].messages" class="message" :class="(messageObj.status === 'sent') ? 'message-sent' : 'message-received'">
+                        {{ messageObj.message }}
                     </div>
-                    <div class="message message-sent">
-                        Ricordati di comprare i bomboloni alla crema!!!!!!!!!
-                    </div>
-                    <div class="message message-received">
-                        Si si!! Non temere!!
-                    </div>
+                    
                 </div>
 
                 <!--

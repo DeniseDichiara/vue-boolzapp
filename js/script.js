@@ -182,7 +182,7 @@ createApp({
         addNewTodoElement(todoElement){
             if (this.newElement.message !== ''){
                 this.contacts.push(todoElement);
-                this.newElement = {messages: ''};
+                this.newElement = {message: ''};
             }
         },
 

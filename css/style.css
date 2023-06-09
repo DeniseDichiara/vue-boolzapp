@@ -41,7 +41,7 @@ img{
 }*/
 
 .my_chat-window{
-    background-color: #e6ddd4;
+    background-image: url('../img/mine.jpg');
     width: 100%;
     height: calc(100% - 100px) ;
     position: relative;
@@ -92,11 +92,18 @@ i{
     background-color: #ffffff;
     width: 100%;
     height: calc(100% - 240px);
+    overflow-y: auto;
+}
+.my_border{
     border-top: 1px solid #d6d6d6;
 }
 
-.contact-active{
+.contact.active{
     background-color: #e9ebeb;
+}
+
+.my_border:hover{
+    background-color:  #e9ebeb ;
 }
 
 .my_bell{
@@ -177,10 +184,25 @@ i{
     right: 5px;
 }
 
+.clearfix::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.message{
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    clear: both;
+}
+
 .message-sent{
+    float: right;
     background-color: #d5f9ba;
 }
 
 .message-received{
+    float: left;
     background-color: white;
 }

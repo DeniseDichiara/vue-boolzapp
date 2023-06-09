@@ -70,7 +70,7 @@
             <!--* CONTATC LIST-->
             <!--! v-for su contacts-->
             <div class="contact-list">
-                <div class=" d-flex flex-row justify-content-between pb-2 my_border"  v-for="(contact, index) in contacts" @click="selectConctact(index)" >
+                <div class=" d-flex flex-row justify-content-between pb-2 my_border"  v-for="(contact, index) in contacts" @click="selectConctact(index)" :class="(indice === activeContactIndex) ? 'active' : ''">
                     <article class="contact d-flex flex-row pt-2">
                         <div class="contact-avatar ps-3">
                             <img :src="contact.avatar" :alt="contact.name +'\'s avatar'">
@@ -117,42 +117,11 @@
 
 
                 <!--! MESSAGES-->
-
                 <div class="messages clearfix">
                     <div v-for="messageObj in contacts[activeContactIndex].messages" class="message" :class="(messageObj.status === 'sent') ? 'message-sent' : 'message-received'">
                         {{ messageObj.message }}
                     </div>
-                    
                 </div>
-
-                <!--
-
-                    <div class="green1 ps-2">
-                    <div>
-                        <div v-for="messageObj in contacts[activeContactIndex].messages" :class=" (messageObj.status === 'sent)' ? 'message-sent' : 'message-received'">
-                        {{ messageObj.message }}
-                        </div>
-                        <div class="my_hs">15:30</div>
-                    </div>
-                </div>
-
-                <div class="green2 ps-2">
-                    <div>
-                        <div> Ricordati di stendere i panni</div>
-                        <div class="my_hs">15:50</div>
-                    </div>
-                </div>
-
-                <div class="white ps-2">
-                    <div>
-                        <div>Tutto fatto!</div>
-                        <div class="my_hs">16:15</div>
-                    </div>
-
-                </div>
-
-                -->
-                
             </div>
 
             <div class="my_dialog-window d-flex flex-row justify-content-between align-items-center px-5">

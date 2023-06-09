@@ -22,23 +22,11 @@ img{
     border-radius: 50%;
 }
 
-/*.my_main-window{
-    margin: 0 auto;
-    /*background-color: azure;*/
-    /*width: 1500px;
-    height: 1100px; 
-}
-*/
-
 .my_contacts-window{
     background-color: white;
     width: 470px;
     height: 100%;
 }
-
-/*.my_chat-dialog-window{
-    width: calc(100% - 100px);
-}*/
 
 .my_chat-window{
     background-image: url('../img/mine.jpg');
@@ -52,13 +40,6 @@ img{
     width: 100%;
     height: 100px;
 }
-
-/*.my_smile{
-    width: 50px;
-    height: 50px;
-    /*margin: 0 auto;
-}
-*/
 
 i{
     width: 100%;
@@ -146,36 +127,6 @@ i{
 .my_bell-icon {
     margin: 0 auto;
 }
-
-/*.green1{
-    background-color: #d5f9ba;
-    width:250px;
-    height: 40px;
-    border-radius: 10px;
-    position: absolute;
-    top: 150px;
-    right: 200px;
-}
-
-.green2{
-    background-color: #d5f9ba;
-    width:250px;
-    height: 40px;
-    border-radius: 10px;
-    position: absolute;
-    top: 200px;
-    right: 200px;
-}
-
-.white{
-    background-color: white;
-    width:250px;
-    height: 40px;
-    border-radius: 10px;
-    position: absolute;
-    top: 300px;
-    left: 200px;
-}*/
 
 .my_hs{
     font-size: x-small;

@@ -192,6 +192,8 @@ createApp({
             }
         },
 
+        //* Ricevuto il messaggio (con status :'sent'), aspettare 1 secondo e pushare la risposta 'ok'(che ha staus: 'received')
+
         NewAnswer(){
             this.contacts[this.activeContactIndex].messages.push({date:'28/03/2020 10:20:10',  message: 'ok', status: 'received'});
         }
